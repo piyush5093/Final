@@ -1,0 +1,174 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  background: #050510;
+  color: #ecf0ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #12144b 0%, #050510 45%, #030308 100%);
+}
+
+.app-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.mesh {
+  position: fixed;
+  width: 40rem;
+  height: 40rem;
+  filter: blur(100px);
+  border-radius: 50%;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.mesh-a {
+  background: #6a78ff;
+  top: -10rem;
+  left: -10rem;
+}
+
+.mesh-b {
+  background: #16d8c7;
+  bottom: -12rem;
+  right: -6rem;
+}
+
+main {
+  width: min(1100px, 92vw);
+  margin: 3rem auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero,
+.card {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(16px);
+  border-radius: 24px;
+}
+
+.hero {
+  padding: 2.25rem;
+  margin-bottom: 1.3rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  color: #b8fffe;
+  border: 1px solid rgba(184, 255, 254, 0.4);
+}
+
+h1 {
+  margin: 1rem 0 0.2rem;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+}
+
+.title {
+  margin: 0;
+  color: #b2b7d3;
+  font-size: 1.12rem;
+}
+
+.about {
+  line-height: 1.7;
+  max-width: 70ch;
+}
+
+.chips,
+.links,
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.chips span,
+.tags span,
+.links a {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  color: #f4f7ff;
+  font-size: 0.9rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1.1rem 1.2rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.stack-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.stack-grid h3 {
+  margin: 0;
+  text-transform: capitalize;
+  color: #9af8f4;
+}
+
+.stack-grid p {
+  margin: 0.3rem 0 0;
+  color: #dde2f8;
+}
+
+.item {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 0.85rem;
+  margin-top: 0.85rem;
+}
+
+.item:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.item h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.item p {
+  margin: 0.5rem 0;
+}
+
+.item ul {
+  margin-top: 0.5rem;
+  padding-left: 1.1rem;
+}
+
+small {
+  color: #b8c1e3;
+}
